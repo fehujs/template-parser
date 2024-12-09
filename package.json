@@ -1,0 +1,40 @@
+{
+  "name": "@fehujs/template-parser",
+  "version": "1.0.0",
+  "description": "Small template parser",
+  "main": "build/index.js",
+  "type": "module",
+  "files": [
+    "./build/**/*",
+    "README.md",
+    "LICENCE"
+  ],
+  "exports": {
+    ".": "./build/index.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "build:types": "tsc -d --declarationDir build --declarationMap --emitDeclarationOnly",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fehujs/template-parser.git"
+  },
+  "keywords": [
+    "template",
+    "syntax"
+  ],
+  "author": "Pascal LLeonart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fehujs/template-parser/issues"
+  },
+  "homepage": "https://github.com/fehujs/template-parser#readme",
+  "devDependencies": {
+    "@fehujs/tsconfig": "^1.0.0",
+    "@types/node": "^22.10.1",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.7.2"
+  }
+}
