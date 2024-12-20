@@ -1,7 +1,9 @@
 const esbuild = require("esbuild")
-const { rmSync } = require("node:fs")
+const { existsSync, rmSync } = require("node:fs")
 
-rmSync('build', { recursive: true })
+
+if (existsSync('build'))
+    rmSync('build', { recursive: true })
 
 esbuild.build({
     entryPoints: ['./src/index.ts'],
