@@ -1,6 +1,6 @@
 {
   "name": "@fehujs/template-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small template parser",
   "main": "build/index.js",
   "type": "module",
@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/fehujs/template-parser#readme",
   "devDependencies": {
+    "@fehujs/build": "^0.1.1",
     "@fehujs/tsconfig": "^1.0.0",
     "@types/node": "^22.10.1",
-    "esbuild": "^0.24.0",
     "typescript": "^5.7.2"
   }
 }
